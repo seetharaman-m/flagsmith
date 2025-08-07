@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <title>Flagsmith Quickstart Guide</title>
+  <script src="https://cdn.jsdelivr.net/npm/flagsmith@9.3.0/index.js"></script>
+    <script>
+         flagsmith.init({
+         environmentID: 'mEkh7o5Q4pk9k8ASB92D3k',
+         onChange: (oldFlags, params) => {
+         if (flagsmith.hasFeature('show_demo_button')) {
+            var submit_button = document.getElementById('submit_button');
+            submit_button.style.display = 'block';
+         }
+        },
+         });
+  </script>
+
+ </head>
+ <body>
+  <h1>Here's our button!</h1>
+  <div id="button" style="display:none">
+   <input type="submit" value="Flagsmith Quickstart Button!" />
+  </div>
+  <div id="submit_button" style="display:none">
+   <input type="submit" value="Quickstart!" />
+  </div>	  
+ </body>
+</html>
