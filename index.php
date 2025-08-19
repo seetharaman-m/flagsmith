@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 
 use Flagsmith\Flagsmith;
 
-$flagsmith = new Flagsmith('F3GGuxvQv4f5HnndtLsx5p'); // Replace with your key
+$flagsmith = new Flagsmith('F3GGuxvQv4f5HnndtLsx5p'); 
 
 function isDeleteButtonVisible($flagsmith) {
     try {
@@ -54,7 +54,7 @@ function isBetaFeatureVisible($flagsmith) {
                 <p>This is a new beta feature only visible in the Development environment!</p>
             </div>
         <?php else: ?>
-            <span>Beta feature hidden by feature flag</span>
+            <span></span>
         <?php endif; ?>
     </div>
 </body>
