@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 
 use Flagsmith\Flagsmith;
 
-$flagsmith = new Flagsmith('D9FYneTrDEQyC8Rustm7zo'); // Replace with your key
+$flagsmith = new Flagsmith('F3GGuxvQv4f5HnndtLsx5p'); // Replace with your key
 
 function isDeleteButtonVisible($flagsmith) {
     try {
